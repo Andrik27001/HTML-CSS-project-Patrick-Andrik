@@ -12,19 +12,20 @@
     <form id="survey-form">
       <label id="name-label" for="name">Name</label>
       <br>
-      <input id="name" type="text"  placeholder="Enter your name">
+      <input id="name" type="text"  placeholder="Enter your name" required>
       <br><br>
       <label id="email-label" for="email">Email</label>
       <br>
-      <input id="email" type="email" placeholder="Enter your Email">
+      <input id="email" type="email" placeholder="Enter your Email" required>
       <br><br>
       <label id="number-label" for="number">Number</label>
       <br>
       <input id="number" type="number" min="10" max="99" placeholder="Age">
       <br>
       <br>
-      <select id="dropdown">
-        <option value="#">Select current role</option>
+      <select  id="dropdown" placeholder="Select current role">
+        <option value="Student">Student</option>
+        <option value="Full Time Job">Full Time Job</option>
       </select>
       <br><br>
       <input name="Recomendation" value="Definitely" type="radio">Definitely
@@ -48,6 +49,11 @@
       <input type="checkbox" name="improve" value="Wiki">Wiki<br>
       <input type="checkbox" name="improve" value="Forum">Forum<br>
       <input type="checkbox" name="improve" value="Additional Courses">Additional Courses<br>
+      <br><br>
+      <textarea>
+      </textarea>
+      <br><br>
+      <input type="submit" id="submit" value="Submit">
     </form>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
