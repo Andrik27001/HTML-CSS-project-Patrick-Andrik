@@ -8,36 +8,42 @@
 
   <body>
     <h1 id="title">freeCodeCamp Survey Form</h1>
-    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <p id="description"><i>Thank you for taking the time to help us improve the platform</i></p>
     <form id="survey-form">
+      <div id="inputs">
       <label id="name-label" for="name">Name</label>
       <br>
-      <input id="name" type="text"  placeholder="Enter your name" required>
-      <br><br>
+      <input id="name" type="text"  placeholder="Enter your name" required class="style-inputs">
+      <br>
       <label id="email-label" for="email">Email</label>
       <br>
-      <input id="email" type="email" placeholder="Enter your Email" required>
-      <br><br>
-      <label id="number-label" for="number">Number</label>
+      <input id="email" type="email" placeholder="Enter your Email" required class="style-inputs">
       <br>
-      <input id="number" type="number" min="10" max="99" placeholder="Age">
+      <label id="number-label" for="number">Age (optional)</label>
       <br>
+      <input id="number" type="number" min="10" max="99" placeholder="Age" class="style-inputs">
       <br>
-      <select  id="dropdown" placeholder="Select current role">
+      <label for="dropdown">Which option best describes your current role?</label>
+      <select id="dropdown" placeholder="Select current role"  class="style-dropdown">
         <option value="Student">Student</option>
         <option value="Full Time Job">Full Time Job</option>
       </select>
-      <br><br>
+      <br>
+      <label for="">Would you recommend freeCodeCamp to a friend?</label>
+      <br>
       <input name="Recomendation" value="Definitely" type="radio">Definitely
       <br>
       <input name="Recomendation" value="Maybe" type="radio">Maybe
       <br>
-      <input name="Recomendation" value="Not sure" type="radio">Not sureç
+      <input name="Recomendation" value="Not sure" type="radio">Not sure
       <br><br>
-      <select id="feature">
+      <label for="feature">What is your favorite feature of freeCodeCamp?</label>
+      <select id="feature" class="style-dropdown">
         <option value="#">Select an option</option>
       </select>
-      <br><br>
+      <br>
+      <label for="improve">What would you like to see improved? (Check all that apply)</label>
+      <br>
       <input type="checkbox" name="improve" value="Front-end Projects">Front-end Projects<br>
       <input type="checkbox" name="improve" value="Back-end Projects">Back-end Projects<br>
       <input type="checkbox" name="improve" value="Data Visualization">Data Visualization<br>
@@ -49,11 +55,13 @@
       <input type="checkbox" name="improve" value="Wiki">Wiki<br>
       <input type="checkbox" name="improve" value="Forum">Forum<br>
       <input type="checkbox" name="improve" value="Additional Courses">Additional Courses<br>
-      <br><br>
-      <textarea>
+      <br>
+      <label for="input-textarea">Any comments or suggestions?</label>
+      <textarea id="input-textarea" placeholder="Enter your comment here..." rows="8" cols="89">
       </textarea>
       <br><br>
       <input type="submit" id="submit" value="Submit">
+      </div>
     </form>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
